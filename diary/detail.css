@@ -1,0 +1,499 @@
+*{
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+.전체{
+    display: flex;
+    flex-direction: row;
+}
+.여백{
+    width: 376px;
+}
+.중앙내용{
+    display:flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    width: 1168px;
+}
+.헤더{
+    margin-top: 10px;
+    color: #000;
+    font-family: "Pretendard Variable";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 88.889% */
+    letter-spacing: -0.18px;
+    height: 60px;
+}
+
+#헤더 {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+#헤더:hover {
+  opacity: 0.7;
+}
+
+#제목{
+ 
+    height: 36px;
+    margin-top: 64px;
+    border-bottom: #000 solid ;
+    margin-bottom: 16px;
+    color: #000;
+    font-family: "Pretendard Variable";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 109.091% */
+    letter-spacing: -0.22px;
+}
+
+.기분영역{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+#기분이모지{
+    width: 32px;
+    height: 32px;
+}
+
+#기분{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #000;
+    font-family: "Pretendard Variable";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.18px;
+}
+
+.기분과날짜영역{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #D4D3D3;
+}
+
+#날짜{
+    display: flex;
+    align-items: center;
+    color: #777;
+    font-family: "Pretendard Variable";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.14px;
+}
+#내용영역 {
+    margin-bottom: 24px;
+}
+
+#내용영역 > div:first-child {
+    color: #000;
+    font-family: "Pretendard Variable";
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+#내용{
+    margin-top: 13px;
+    margin-bottom: 12px;
+    color: #333;
+    font-family: "Pretendard Variable";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+.복사영역{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+
+.내용복사{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: transparent;
+    border: none;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.내용복사:hover {
+    background: #f5f5f5;
+}
+
+#복사아이콘{
+    width: 20px;
+    height: 20px;
+}
+
+.복사텍스트{
+    color: #1C1C1C;
+    font-family: "Pretendard Variable";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.14px;
+}
+.수정삭제버튼{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 16px;
+    border-bottom: 1px solid #D4D3D3;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+#수정버튼{
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    font-family: "Pretendard Variable";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#수정버튼:hover {
+    background: #f5f5f5;
+}
+
+#삭제버튼{
+    border-radius: 8px;
+    border: 1px solid #D4D3D3;
+    background: #fff;
+    color: #777;
+    font-family: "Pretendard Variable";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#삭제버튼:hover {
+    background: #f5f5f5;
+    color: #FF4444;
+    border-color: #FF4444;
+}
+.회고{
+    color: #000;
+    font-family: "Pretendard Variable";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.18px;
+    margin-bottom: 13px;
+}
+.회고입력영역{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+    margin-bottom: 16px;
+}
+#회고입력인풋{
+    width: 1101px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #D4D3D3;
+    background: #fff;
+    color: #000;
+    padding: 12px 16px;
+    font-family: "Pretendard Variable";
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+#회고입력인풋:focus {
+    border-color: #000;
+}
+
+#회고입력인풋::placeholder{
+    color: #ABABAB;
+}
+
+#회고입력버튼{
+    width: 51px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    background: #000;
+    color: #fff;
+    font-family: "Pretendard Variable";
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#회고입력버튼:hover {
+    background: #333;
+}
+
+.회고노출영역{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 1101px;
+    gap: 12px;
+}
+.회고내용날짜행{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #D4D3D3;
+}
+#회고내용{
+    color: #000;
+    font-family: "Pretendard Variable";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.16px;
+}
+#회고등록날짜{
+    color: var(--Gray-Gray-600, #777);
+    font-family: "Pretendard Variable";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.16px;
+
+}
+#복사토스트{
+    display: none;
+    width: 760px;
+    height: 56px;
+    padding: 16px;
+    /* position:absolute; */
+    /* bottom: calc(80% - 760px/2);
+    left: calc(50% - 56px/2); */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.90);
+    color: #FFF;
+    font-family: "Pretendard Variable";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.16px;
+    animation-name: 철수의애니메이션;
+    animation-duration: 2s;
+}
+
+@keyframes 철수의애니메이션 {
+    from {
+        opacity : 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+.토스트영역{
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+    bottom: 5%;
+}
+.토스트날개{
+    width: 204px;
+}
+
+/* 수정 모드 스타일 (일기쓰기 모달과 동일) */
+#수정시바뀌는영역 {
+  background-color: #f9f9f9;
+  padding: 32px;
+  border-radius: 12px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.오늘의기분 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.오늘의기분 > div:first-child {
+  width: 100%;
+  color: #000;
+  font-family: "Pretendard Variable";
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.오늘의기분 input[type="radio"] {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.오늘의기분 input[type="radio"]:first-of-type {
+  margin-left: 0;
+}
+
+.오늘의기분 label {
+  cursor: pointer;
+  color: #000;
+  font-family: "Pretendard Variable";
+  font-size: 14px;
+}
+
+.제목, .내용 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.제목 > div, .내용 > div {
+  color: #000;
+  font-family: "Pretendard Variable";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#오늘의제목 {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #D4D3D3;
+  background: #fff;
+  color: #000;
+  padding: 12px 16px;
+  font-family: "Pretendard Variable";
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#오늘의제목:focus {
+  border-color: #000;
+}
+
+#오늘의제목::placeholder {
+  color: #ABABAB;
+}
+
+#오늘의내용 {
+  width: 100%;
+  height: 128px;
+  border-radius: 8px;
+  border: 1px solid #D4D3D3;
+  background: #fff;
+  color: #000;
+  padding: 12px 16px;
+  font-family: "Pretendard Variable";
+  font-size: 16px;
+  outline: none;
+  resize: none;
+  transition: border-color 0.2s;
+}
+
+#오늘의내용:focus {
+  border-color: #000;
+}
+
+#오늘의내용::placeholder {
+  color: #ABABAB;
+}
+
+.일기_등록_취소_버튼 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.닫기버튼 {
+  width: 120px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+  font-family: "Pretendard Variable";
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.닫기버튼:hover {
+  background: #f5f5f5;
+}
+
+.등록하기버튼 {
+  width: 120px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-family: "Pretendard Variable";
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.등록하기버튼:hover {
+  background: #333;
+}

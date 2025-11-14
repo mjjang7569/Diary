@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>상세페이지</title>
+    <link rel="stylesheet" href="./detail.css" />
+</head>
+<body>
+    <div class="전체">
+        <div class="여백"></div>
+        <div class="중앙내용" >
+            <div id="헤더" onclick="location.href='./index.html'">민정이의 다이어리</div>
+            <div id ="수정시바뀌는영역">
+                <div id ="제목"></div>
+                <div class="기분과날짜영역">
+                    <div class="기분영역">
+                        <img id ="기분이모지">
+                        <div id="기분"></div>
+                    </div>
+                    
+                    <div id= "날짜"></div>
+                </div>
+                <div id ="내용영역">
+                    <div>내용</div>
+                    <div id="내용"></div>
+                </div>
+                <div class="복사영역">
+                    <div class = "빈영역" ></div>
+                    <button class="내용복사" onclick="내용복사기능()">
+                        <img id="복사아이콘" src="./assets/copy_outline_light_xs.svg" >
+                        <div class="복사텍스트" >내용복사</div>
+                    </button>
+                </div>            
+                <div class="수정삭제버튼">
+                    <button id="수정버튼" onclick="일기상세수정기능()">수정</button><button id="삭제버튼" onclick="일기상세삭제기능()">삭제</button>
+                </div>
+            </div>
+            <div class="회고">회고</div>
+            <div class="회고입력영역">
+                <input id="회고입력인풋" type="text" placeholder="회고를 남겨보세요." oninput="회고생성기능(event)">
+                <button id="회고입력버튼" onclick="회고입력기능()">입력</button>
+            </div>
+            <div class="회고노출영역" id="회고노출영역">
+                       
+            </div>
+            <div class="토스트영역">
+                <div class ="토스트날개"></div>
+                <div id="복사토스트">내용이 복사되었습니다.</div>
+                <div class ="토스트날개"></div>
+            </div>
+            
+            </div>
+        <div class="여백"></div>
+    </div>
+
+    
+    <script src="./detail.js"></script>
+    </body>
+</html>
