@@ -579,6 +579,9 @@
 .일기쓰기버튼 {
   width: 110px;
   height: 48px;
+  cursor: pointer;
+  object-fit: contain;
+  display: block;
 }
 .내용영역 {
   width: 1168px;
