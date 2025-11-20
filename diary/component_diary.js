@@ -491,7 +491,7 @@ const 일기보관함렌더링 = () => {
             </div>
             <input class="검색인풋" id="검색기능" type="text" placeholder="검색어를 입력해 주세요." oninput="검색기능(event)">      
         </div>
-        <img id="일기쓰기버튼" class="일기쓰기버튼" onclick="일기쓰기노출기능()" src="./assets/드롭다운.png"/>`;
+        <img id="일기쓰기버튼" class="일기쓰기버튼" onclick="일기쓰기노출기능()" src="./assets/드롭다운.png" alt="일기쓰기 버튼"/>`;
 };
 
 const 필터선택기능 = (event) => {
